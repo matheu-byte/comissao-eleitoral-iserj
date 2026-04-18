@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus">
+    <link rel="icon" href="iserj.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscrição de Chapas - Grêmio 2026</title>
+</head>
+<body>
+
+<header>
+    <h1>Comissão Eleitoral - Grêmio Estudantil 2026</h1> 
+</header>
+
+<div class="container">
+    <h2>Regras para inscrição</h2>
+    <ul>
+        <li>Precisa ser do Ensino Médio (máximo 1 integrante do Fundamental).</li>
+        <li>Informar nomes e turmas de todos os integrantes.</li>
+        <li>Destacar Presidente e Vice-Presidente.</li>
+        <li>Não pode incluir pessoas de fora ou ex-alunos.</li>
+        <li>Obrigatório email institucional de cada integrante.</li>
+    </ul>
+
+    <h2>Formulário de Inscrição</h2>
+
+    <form action="https://formspree.io/f/xeevkgvj" method="POST">
+        
+        <label>Nome da Chapa:</label>
+        <input type="text" name="nome_chapa" required>
+
+        <label>Presidente:</label>
+        <input type="text" name="presidente" required>
+
+        <label>Vice-Presidente:</label>
+        <input type="text" name="vice_presidente" required>
+
+        <label>Integrantes (Nome + Turma + Email):</label>
+        <textarea name="integrantes" rows="6" placeholder="Ex: João Silva - 2º Ano A - joao@iserj.edu.br" required></textarea>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</div>
+
+</body>
+</html>
